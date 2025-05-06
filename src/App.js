@@ -104,7 +104,7 @@ function Header() {
             <p>Sales & Services</p>
           </div>
         </div>
-        <img src="./car grp.png" alt="indica car" height={"40px"} />
+        
       </div>
     </header>
   );
