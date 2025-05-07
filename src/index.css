@@ -28,6 +28,17 @@ header > div {
   gap: 10px;
   font-family: cursive;
 }
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  font-size: 16px;
+  text-align: justify;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 2px;
+  line-height: 28px;
+}
 .menu {
   width: 90%;
   margin: auto;
@@ -36,6 +47,7 @@ header > div {
   border: 2px solid black;
   text-align: center;
   padding: 10px 5px;
+  border-radius: 30px;
 }
 button {
   background: #000;
@@ -44,11 +56,16 @@ button {
   border-radius: 20px;
   margin: 20px 0px;
 }
+.btn-wrapper {
+  display: flex;
+  gap: 10px;
+}
 .cars {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 2rem;
+  margin: 10px 0px 0px 0px;
 }
 footer {
   margin: 20px 0px 0px 0px;
@@ -63,7 +80,14 @@ footer > p {
   gap: 5px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+  .home > img {
+    height: 200px;
+  }
   .cars {
     list-style: none;
     display: grid;
@@ -71,8 +95,14 @@ footer > p {
     gap: 1em;
     padding: 10px 0px;
   }
+  .heading {
+    /* background: #be3f3f; */
+    font-size: 10px;
+  }
   header > div > img {
-    visibility: hidden;
+    /* visibility: hidden; */
     background: #af4848;
+    height: 10px;
+    display: flex;
   }
 }
